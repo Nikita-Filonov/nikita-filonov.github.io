@@ -3,10 +3,18 @@ import {Form, FormControl, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {connect} from "react-redux";
 import {setRoute} from "../../redux/reducer/meActions";
+import {useTranslation} from 'react-i18next';
 
 const NavigationNavbar = ({route, setRoute}) => {
+  const {i18n} = useTranslation();
+
+  const onLanguage = async (lang) => {
+    await i18n.changeLanguage(lang)
+    localStorage.setItem('lang', lang)
+  }
+
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className={'fixed-top'}>
       <Navbar.Brand href="/">Никита Филонов</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -61,8 +69,8 @@ const NavigationNavbar = ({route, setRoute}) => {
             Проекты
           </Nav.Link>
           <NavDropdown title="Язык" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Русский</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">English</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => onLanguage('ru')}>Русский</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => onLanguage('en')}>English</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '../src/utils/i18n';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from "react-redux";
 import {createStore} from "redux";
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
+import {BrowserRouter as Router,} from "react-router-dom";
 import NavigationNavbar from "./components/navigation/Navbar";
 import Sidebar from "./components/navigation/Sidebar";
-import {Empty} from "./components/other/Empty";
 import meReducer from "./redux/reducer/meReducer";
-import {Main} from "./pages/Main";
+import Main from "./pages/Main";
 
 const store = createStore(meReducer);
 

@@ -2,6 +2,10 @@ html {
     overflow-y: overlay;
 }
 
+body {
+    padding-top: 60px;
+}
+
 *::-webkit-scrollbar {
     width: 0.4em
 }
@@ -18,4 +22,13 @@ html {
 .dropdown-menu {
     right: 0 !important;
     left: auto !important;
+}
+
+
+.nav.nav-pills .nav-link.active {
+    background-color: #343A40;
+}
+
+.nav-link {
+    color: black;
 }

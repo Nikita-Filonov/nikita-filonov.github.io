@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {Col, Nav, Row, Tab} from "react-bootstrap";
 import {Link, useHistory} from 'react-router-dom';
-import {Main} from "../../pages/Main";
+import Main from "../../pages/Main";
 import {About} from "../../pages/About";
 import {connect} from "react-redux";
 import {setRoute} from "../../redux/reducer/meActions";
@@ -25,57 +25,37 @@ const Sidebar = ({route, setRoute}) => {
   }, [history, setRoute])
 
   return (
-    <Tab.Container id="left-tabs-example" defaultActiveKey={'/'} activeKey={route}>
+    <Tab.Container
+      id="left-tabs-example"
+      defaultActiveKey={'/'}
+      activeKey={route}
+      onSelect={(path) => setRoute(path)}
+    >
       <Row className={'mt-5 ml-2'} style={{width: '99%'}}>
         <Col sm={2}>
-          <Nav variant="pills" className="flex-column">
+          <Nav variant="pills" className="flex-column" bg="dark">
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to={'/'}
-                onSelect={() => setRoute('/')}
-                eventKey={'/'}
-              >
+              <Nav.Link as={Link} to={'/'} eventKey={'/'}>
                 Главная
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to={'/about'}
-                onSelect={() => setRoute('/about')}
-                eventKey={'/about'}
-              >
+              <Nav.Link as={Link} to={'/about'} eventKey={'/about'}>
                 Обзор
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to={'/education'}
-                onSelect={() => setRoute('/education')}
-                eventKey={'/education'}
-              >
+              <Nav.Link as={Link} to={'/education'} eventKey={'/education'}>
                 Образование
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to={'/work'}
-                onSelect={() => setRoute('/work')}
-                eventKey={'/work'}
-              >
+              <Nav.Link as={Link} to={'/work'} eventKey={'/work'}>
                 Опыт работы
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to={'/projects'}
-                onSelect={() => setRoute('/projects')}
-                eventKey={'/projects'}
-              >
+              <Nav.Link as={Link} to={'/projects'} eventKey={'/projects'}>
                 Проекты
               </Nav.Link>
             </Nav.Item>
