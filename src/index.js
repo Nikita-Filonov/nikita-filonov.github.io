@@ -1,12 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Provider} from "react-redux";
+import {createStore} from "redux";
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {NavigationNavbar} from "./components/navigation/Navbar";
+import {Sidebar} from "./components/navigation/Sidebar";
+import {Empty} from "./components/other/Empty";
+import meReducer from "./redux/reducer/meReducer";
+
+const store = createStore(meReducer);
+
+const CustomRoute = () => {
+
+  return (
+    <Router>
+      <NavigationNavbar/>
+      <Sidebar/>
+      <div>
+        <Switch>
+          <Route path="/" exact component={Empty}/>
+          <Route path="/about" exact component={Empty}/>
+          <Route path={'/education'} exact component={Empty}/>
+        </Switch>
+      </div>
+    </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <CustomRoute/>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
