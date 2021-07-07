@@ -1,31 +1,35 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from "react-redux";
 import {createStore} from "redux";
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import {NavigationNavbar} from "./components/navigation/Navbar";
-import {Sidebar} from "./components/navigation/Sidebar";
+import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
+import NavigationNavbar from "./components/navigation/Navbar";
+import Sidebar from "./components/navigation/Sidebar";
 import {Empty} from "./components/other/Empty";
 import meReducer from "./redux/reducer/meReducer";
+import {Main} from "./pages/Main";
 
 const store = createStore(meReducer);
 
 const CustomRoute = () => {
+  const [route, setRoute] = useState('/')
+
+  useEffect(() => {
+    setRoute(window.location.pathname)
+    const listener = store.subscribe(() => setRoute(store.getState().me.route))
+
+    return () => {
+      listener()
+    }
+  }, [])
 
   return (
     <Router>
       <NavigationNavbar/>
-      <Sidebar/>
-      <div>
-        <Switch>
-          <Route path="/" exact component={Empty}/>
-          <Route path="/about" exact component={Empty}/>
-          <Route path={'/education'} exact component={Empty}/>
-        </Switch>
-      </div>
+      {route !== '/' ? <Sidebar/> : <Main/>}
     </Router>
   )
 }

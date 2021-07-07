@@ -1,8 +1,10 @@
 import React from "react";
 import {Form, FormControl, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Link} from 'react-router-dom';
+import {connect} from "react-redux";
+import {setRoute} from "../../redux/reducer/meActions";
 
-export const NavigationNavbar = () => {
+const NavigationNavbar = ({route, setRoute}) => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Navbar.Brand href="/">Никита Филонов</Navbar.Brand>
@@ -13,11 +15,51 @@ export const NavigationNavbar = () => {
           <Form inline>
             <FormControl type="text" placeholder="Поиск" className="mr-sm-2"/>
           </Form>
-          <Nav.Link eventKey={1} to="/" as={Link}>Главная</Nav.Link>
-          <Nav.Link eventKey={2} to="/about" as={Link}>Обзор</Nav.Link>
-          <Nav.Link eventKey={3} to="/education" as={Link}>Образование</Nav.Link>
-          <Nav.Link eventKey={4} to="/work">Опыт работы</Nav.Link>
-          <Nav.Link eventKey={5} href="/projects">Проекты</Nav.Link>
+          <Nav.Link
+            active={route === '/'}
+            eventKey={'/'}
+            to="/"
+            as={Link}
+            onSelect={() => setRoute('/')}
+          >
+            Главная
+          </Nav.Link>
+          <Nav.Link
+            eventKey={'/about'}
+            to="/about"
+            as={Link}
+            active={route === '/about'}
+            onSelect={() => setRoute('/about')}
+          >
+            Обзор
+          </Nav.Link>
+          <Nav.Link
+            eventKey={'/education'}
+            to="/education"
+            as={Link}
+            active={route === '/education'}
+            onSelect={() => setRoute('/education')}
+          >
+            Образование
+          </Nav.Link>
+          <Nav.Link
+            eventKey={'/work'}
+            to="/work"
+            as={Link}
+            active={route === '/work'}
+            onSelect={() => setRoute('/work')}
+          >
+            Опыт работы
+          </Nav.Link>
+          <Nav.Link
+            eventKey={'/projects'}
+            to="/projects"
+            as={Link}
+            active={route === '/projects'}
+            onSelect={() => setRoute('/projects')}
+          >
+            Проекты
+          </Nav.Link>
           <NavDropdown title="Язык" id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Русский</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">English</NavDropdown.Item>
@@ -27,3 +69,15 @@ export const NavigationNavbar = () => {
     </Navbar>
   )
 }
+
+
+const getState = (state) => ({
+  route: state.me.route
+})
+
+export default connect(
+  getState,
+  {
+    setRoute
+  },
+)(NavigationNavbar);

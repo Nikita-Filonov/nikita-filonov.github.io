@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div className={'container'} style={{backgroundColor: 'red'}}>
+    <div className={'container container-fluid'} style={{backgroundColor: 'red'}}>
       About
       About
       About
