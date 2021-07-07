@@ -22,7 +22,7 @@ const Main = ({setRoute}) => {
             history.push('/about')
           }}
         >
-          {t('Welcome to React')}
+          {t('Get started')}
         </Button>
       </div>
       <Row style={{marginTop: '10%'}}>

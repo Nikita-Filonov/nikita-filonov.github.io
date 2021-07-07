@@ -29,6 +29,14 @@ body {
     background-color: #343A40;
 }
 
+a.dropdown-item.active {
+    background-color: #343A40;
+}
+
 .nav-link {
     color: black;
+}
+
+li p {
+    display: inline;
 }

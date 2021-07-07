@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Form, FormControl, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {connect} from "react-redux";
@@ -7,9 +7,11 @@ import {useTranslation} from 'react-i18next';
 
 const NavigationNavbar = ({route, setRoute}) => {
   const {i18n} = useTranslation();
+  const [lang, setLang] = useState(localStorage.getItem('lang') || 'ru')
 
   const onLanguage = async (lang) => {
     await i18n.changeLanguage(lang)
+    setLang(lang)
     localStorage.setItem('lang', lang)
   }
 
@@ -69,8 +71,18 @@ const NavigationNavbar = ({route, setRoute}) => {
             Проекты
           </Nav.Link>
           <NavDropdown title="Язык" id="collasible-nav-dropdown">
-            <NavDropdown.Item onClick={() => onLanguage('ru')}>Русский</NavDropdown.Item>
-            <NavDropdown.Item onClick={() => onLanguage('en')}>English</NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => onLanguage('ru')}
+              active={lang === 'ru'}
+            >
+              Русский
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => onLanguage('en')}
+              active={lang === 'en'}
+            >
+              English
+            </NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

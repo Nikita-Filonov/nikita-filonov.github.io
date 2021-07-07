@@ -29,7 +29,9 @@ const CustomRoute = () => {
   return (
     <Router>
       <NavigationNavbar/>
-      {route !== '/' ? <Sidebar/> : <Main/>}
+      <div className={'container-fluid'}>
+        {route !== '/' ? <Sidebar/> : <Main/>}
+      </div>
     </Router>
   )
 }

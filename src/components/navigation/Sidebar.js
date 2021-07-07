@@ -31,10 +31,14 @@ const Sidebar = ({route, setRoute}) => {
       activeKey={route}
       onSelect={(path) => setRoute(path)}
     >
-      <Row className={'mt-5 ml-2'} style={{width: '99%'}}>
-        <Col sm={2}>
-          <Nav variant="pills" className="flex-column" bg="dark">
-            <Nav.Item>
+      <Row className={'mt-5 ml-2 mr-2'}>
+        <Col sm={3}>
+          <Nav variant="pills"
+               style={{width: '18%'}}
+               className="flex-column position-fixed d-none d-sm-block"
+               bg="dark"
+          >
+            <Nav.Item className={'w-100'}>
               <Nav.Link as={Link} to={'/'} eventKey={'/'}>
                 Главная
               </Nav.Link>
@@ -61,7 +65,7 @@ const Sidebar = ({route, setRoute}) => {
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={9}>
+        <Col sm={7}>
           <Tab.Content>
             <Tab.Pane eventKey={'/'}>
               <Main/>
