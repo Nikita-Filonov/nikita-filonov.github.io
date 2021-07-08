@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from "react-redux";
 import {createStore} from "redux";
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router,} from "react-router-dom";
+import {HashRouter as Router} from "react-router-dom";
 import NavigationNavbar from "./components/navigation/Navbar";
 import Sidebar from "./components/navigation/Sidebar";
 import meReducer from "./redux/reducer/meReducer";
