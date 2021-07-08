@@ -17,7 +17,7 @@ const NavigationNavbar = ({route, setRoute}) => {
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className={'fixed-top'}>
-      <Navbar.Brand href="/">Никита Филонов</Navbar.Brand>
+      <Navbar.Brand as={Link} to={'/'}>Никита Филонов</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto"/>

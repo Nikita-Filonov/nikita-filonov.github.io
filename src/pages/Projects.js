@@ -1,30 +1,142 @@
 import React from "react";
-import {Card} from "react-bootstrap";
+import {Button} from "react-bootstrap";
+import {HashLink as Link} from "react-router-hash-link";
+import {ArrowLeft} from "react-bootstrap-icons";
+import rq_timer from './../images/rq_timer.png'
+import shipshape from './../images/shipshape.png'
+import task_manager from './../images/task_manager.png'
+import {Logo} from "../components/blocks/Logo";
+import {LastUpdated} from "../components/blocks/LastUpdated";
 
-export const Projects = () => {
-  return (
+export const Projects = () =>
+  <div className={'container container-fluid mb-5'}>
+    <h3>Проекты</h3>
+    <hr/>
+    <li>
+      <Link to={'/projects#rq_timer'}>RQ Timer</Link>
+    </li>
+    <li>
+      <Link to={'/projects#task_manager'}>Task Manager</Link>
+    </li>
+    <li>
+      <Link to={'/projects#shipshape'}>Shipshape</Link>
+    </li>
+    <li>
+      <Link to={'/projects#daily_food'}>Daily Food</Link>
+    </li>
+    <li>
+      <Link to={'/projects#todo'}>To Do</Link>
+    </li>
+
     <div>
+      <h5 className={'mt-5'} id={'rq_timer'}>
+        RQ Timer <Logo logo={rq_timer}/>
+      </h5>
+      <hr/>
+      <h6 className={'mt-4'}>Ссылки</h6>
+      <li>
+        <a href={'https://rqtimer.herokuapp.com/login'} target={'_blank'}>Web</a>
+      </li>
+      <li>
+        <a href={'https://play.google.com/store/apps/details?id=com.timer_lama_time'} target={'_blank'}>Mobile</a>
+      </li>
+      <li>
+        <a href={'https://bit.ly/3hvJ6Hl'} target={'_blank'}>Desktop (x64)</a>
+      </li>
+      <li>
+        <a href={'https://bit.ly/3xhjkND'} target={'_blank'}>Desktop (ia32)</a>
+      </li>
 
+      <h6 className={'mt-4'}>Описание</h6>
+      <p>
+        Проект предназначен для мониторинга боссов/элитных монстров в реальном
+        времени, само приложение было написанно для MMORPG игры Royal Quest. Но
+        на самом деле, может быть использованно для любой многопользовательской игры.
+        Это один из самых маштабных проектов, которы мне приходилось реализовывать
+        и поддерживать. На данный момент приложением пользуются почти 500 пользователей.
+        Ежедневно сервис посещают около 100 юзеров.
+        <br/>
+        <br/>
+        Серверная и Web часть были написаны за одну неделю. Далее вышло мобильное приложение,
+        после вышло Desktop приложение. На данный момент было выпущено 7 релизов.
+        <br/>
+        <br/>
+        Desktop приложение имеет overlay для игры, системные уведомления.
+      </p>
 
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-      <Card body>This is some text within a card body.</Card>
-        <div id={'rq_timer'}>
-         <Card  body>This is some text within a card body.111111</Card>
-      </div>
+      <h6 className={'mt-4'}>Функционал</h6>
+      <li>Создание/удаление/обновление личных и групповых таймеров</li>
+      <li>Пользователи могут создавать группы для коллективного использования</li>
+      <li>В группах есть система прав доступа</li>
+      <li>В группах для таймеров сохраняется история изменений</li>
+      <li>Есть возможность восстановления из истории</li>
+      <li>Уведомления в Telegram</li>
+      <li>Уведомления через Вконтакте</li>
+      <li>Уведомления в Discord</li>
+      <li>Уведомления в мобильном приложении</li>
+      <li>Звуковые уведомления в таймере</li>
+      <li>Системные уведомления в Desktop клиенте</li>
+      <li>Настройки уведомлений, комментариев, звука</li>
+      <li>Google Авторизация</li>
+      <li>Приглашение участников через почту</li>
     </div>
-  )
-}
+
+    <div>
+      <h5 className={'mt-5'} id={'task_manager'}>
+        Task Manager <Logo logo={task_manager}/>
+      </h5>
+      <hr/>
+      <h6 className={'mt-4'}>Ссылки</h6>
+      <li>
+        <a href={'https://task-manager-3031.herokuapp.com/login'} target={'_blank'}>Web</a>
+      </li>
+      <li>
+        <a href={'https://play.google.com/store/apps/details?id=com.task_manager'} target={'_blank'}>Mobile</a>
+      </li>
+
+      <h6 className={'mt-4'}>Описание</h6>
+      <p>
+        Это первый мой проект и первое мобильное приложение. Приложение предназначено для создания заметок/задач.
+        В приложении есть возможность шаринга задач между пользователями. На текущий момент им пользуется
+        почти 200 человек.
+      </p>
+
+      <h6 className={'mt-4'}>Функционал</h6>
+      <li>Создание/удаление/обновление задач</li>
+      <li>Уведомления в Telegram</li>
+      <li>Увдомления в мобильном приложении</li>
+      <li>Уведомления в Web версии</li>
+      <li>Уведомления на почту</li>
+      <li>Шаринг задач между пользователями</li>
+      <li>Комментарии к пошаренным задачам</li>
+      <li>Множество настроек, в том числе кастомные лэйблы к задачам</li>
+    </div>
+
+    <div>
+      <h5 className={'mt-5'} id={'shipshape'}>
+        Shipshape <Logo logo={shipshape}/>
+      </h5>
+      <hr/>
+      <h6 className={'mt-4'}>Ссылки</h6>
+      <li>
+        <a href={'https://play.google.com/store/apps/details?id=com.task_manager'} target={'_blank'}>Mobile</a>
+      </li>
+
+      <h6 className={'mt-4'}>Описание</h6>
+      <p>
+        Это первый мой проект и первое мобильное приложение.
+      </p>
+
+      <h6 className={'mt-4'}>Функционал</h6>
+      <li>Создание/удаление/обновление задач</li>
+
+    </div>
+
+    <LastUpdated when={'Обновлено 08.07.2021'}/>
+    <hr/>
+    <div>
+      <Button as={Link} to={'/work'} variant="light">
+        <ArrowLeft className={'mb-1'}/> Опыт работы
+      </Button>
+    </div>
+  </div>

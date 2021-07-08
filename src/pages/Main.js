@@ -4,6 +4,7 @@ import {useHistory} from "react-router-dom";
 import {connect} from "react-redux";
 import {setRoute} from "../redux/reducer/meActions";
 import {useTranslation} from 'react-i18next';
+import {ArrowRight} from "react-bootstrap-icons";
 
 const Main = ({setRoute}) => {
   const history = useHistory();
@@ -15,14 +16,14 @@ const Main = ({setRoute}) => {
       <h4 className={'text-center text-secondary'}>Я увлекаюсь веб и мобильной разработкой</h4>
       <div className={'text-center'}>
         <Button
-          variant="secondary"
+          variant="outline-secondary"
           className={'mt-5'}
           onClick={() => {
             setRoute('/about')
             history.push('/about')
           }}
         >
-          {t('Get started')}
+          {t('Get started')} <ArrowRight className={'mb-1'}/>
         </Button>
       </div>
       <Row style={{marginTop: '10%'}}>

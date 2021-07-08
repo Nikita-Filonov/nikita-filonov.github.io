@@ -101,22 +101,22 @@ export const About = () =>
     </li>
     <h3 className={'mt-5'}>Проекты</h3>
     <hr/>
-    <li><Link to={'/projects#rq_timer'}>RQ Timer</Link> - приложение для мониторинга боссов в MMORPG. Самый успешный и
+    <li><Link to={'/projects#rq_timer'}>RQ Timer</Link> — приложение для мониторинга боссов в MMORPG. Самый успешный и
       высоко нагруженный проект. Имеет серверную и 3 раных клиентских части: Desktop,
       Mobile, Web.
     </li>
-    <li><Link to={'/projects#task_manager'}>Task Manager</Link> - самый первый мой проект. Приложение для
+    <li><Link to={'/projects#task_manager'}>Task Manager</Link> — самый первый мой проект. Приложение для
       заметок/задач. Имеет 2 клиентские части: Web, Mobile
     </li>
-    <li><Link to={'/projects#shipshape'}>Shipshape</Link> - социальная сеть для обмена советами
+    <li><Link to={'/projects#shipshape'}>Shipshape</Link> — социальная сеть для обмена советами
       по красоте и уходу за собой. Имеется только мобильная клиентская часть. В приложении есть посты,
       статьи, профиль пользователя, deep linking, чат.
     </li>
-    <li><Link to={'/projects#daily_food'}>Daily Food</Link> - приложение для списка покупок и рецептов.
+    <li><Link to={'/projects#daily_food'}>Daily Food</Link> — приложение для списка покупок и рецептов.
       Имеется только мобильная клиентская часть. В приложении есть сторис, широкий выбор продуктов,
       возможность создавать рецепты с фотографиями, категории, достижения.
     </li>
-    <li><Link to={'/projects#daily_food'}>To Do</Link> - приложения для списка дел. От Task Manager
+    <li><Link to={'/projects#todo'}>To Do</Link> — приложения для списка дел. От Task Manager
       отличается тем, что работает без поддержки сервера. И имеет более обширный функционал.
     </li>
     <br/>
@@ -131,16 +131,16 @@ export const About = () =>
     <hr/>
     <p>
       <Mailbox className={'mb-1'}/>{' '}
-      Почта - <a href={'https://mail.google.com/mail/?view=cm&fs=1&to=filonov.nikitkaa@gmail.com'} target={'_blank'}>
+      Почта — <a href={'https://mail.google.com/mail/?view=cm&fs=1&to=filonov.nikitkaa@gmail.com'} target={'_blank'}>
       filonov.nikitkaa@gmail.com</a>
     </p>
     <p>
       <Telegram className={'mb-1'}/>{' '}
-      Telegram - <a href={'https://t.me/sound_right'} target={'_blank'}>@sound_right</a>
+      Telegram — <a href={'https://t.me/sound_right'} target={'_blank'}>@sound_right</a>
     </p>
     <p>
       <Github className={'mb-1'}/>{' '}
-      GitHub - <a href={'https://github.com/Nikita-Filonov'} target={'_blank'}>Nikita-Filono</a>
+      GitHub — <a href={'https://github.com/Nikita-Filonov'} target={'_blank'}>Nikita-Filonov</a>
     </p>
     <hr/>
     <div>
