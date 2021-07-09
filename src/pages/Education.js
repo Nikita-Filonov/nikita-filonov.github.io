@@ -6,7 +6,7 @@ import {LastUpdated} from "../components/blocks/LastUpdated";
 
 export const Education = () =>
   <div className={'container container-fluid mb-5'}>
-    <h3>Образование</h3>
+    <h3 id={'education'}>Образование</h3>
     <hr/>
     <p className={'mt-3'}>
       На данный момент у меня только среднее общее образование. Но это не мешает мне жить

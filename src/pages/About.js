@@ -6,7 +6,7 @@ import {LastUpdated} from "../components/blocks/LastUpdated";
 
 export const About = () =>
   <div className={'container container-fluid mb-5'}>
-    <h3>Общая информация</h3>
+    <h3 id={'main_info'}>Общая информация</h3>
     <hr/>
     <p className={'mt-3'}>
       Имею значительный опыт в написании автоматизированных тестов. А также
@@ -49,7 +49,7 @@ export const About = () =>
       Имеется опыт работы с монолитной и микросервисной архитектурой. Также имеется
       опыт создания <strong>переодически выполняемых</strong> задач на стороне бэкенда.
     </p>
-    <h3 className={'mt-5'}>Стэк технологий</h3>
+    <h3 className={'mt-5'} id={'technology_stack'}>Стэк технологий</h3>
     <hr/>
     <li>Бэкенд:{' '}
       <p className={'mt-3'}>
@@ -100,7 +100,7 @@ export const About = () =>
         TestRail
       </p>
     </li>
-    <h3 className={'mt-5'}>Проекты</h3>
+    <h3 className={'mt-5'} id={'projects'}>Проекты</h3>
     <hr/>
     <li><Link to={'/projects#rq_timer'}>RQ Timer</Link> — приложение для мониторинга боссов в MMORPG. Самый успешный и
       высоко нагруженный проект. Имеет серверную и 3 раных клиентских части: Desktop,
@@ -124,11 +124,11 @@ export const About = () =>
     <p>Все приложения можно посмотреть/скачать в{' '}
       <a href={'https://play.google.com/store/apps/developer?id=Lama+Time'} target={'_blank'}>моем профиле</a>
       {' '}Play Market.</p>
-    <h3 className={'mt-5'}>Языки</h3>
+    <h3 className={'mt-5'} id={'languages'}>Языки</h3>
     <hr/>
     <p>Русский — родной</p>
     <p>English — свободно говорю и понимаю</p>
-    <h3 className={'mt-5'}>Контакты</h3>
+    <h3 className={'mt-5'} id={'contacts'}>Контакты</h3>
     <hr/>
     <p>
       <Mailbox className={'mb-1'}/>{' '}

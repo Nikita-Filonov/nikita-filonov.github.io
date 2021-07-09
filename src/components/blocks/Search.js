@@ -1,57 +1,46 @@
-import React, {Fragment, useState} from "react";
+import React, {useRef, useState} from "react";
 import {AsyncTypeahead} from 'react-bootstrap-typeahead'
+import {SearchRefs} from "../../utils/search";
+import {HashLink as Link} from 'react-router-hash-link';
+import {connect} from "react-redux";
+import {setRoute} from "../../redux/reducer/meActions";
 
-const SEARCH_URI = 'https://api.github.com/search/users';
 
-export const Search = () => {
-  const [isLoading, setIsLoading] = useState(false);
+const Search = ({setRoute}) => {
+  const searchInput = useRef(null)
+  const {Refs} = SearchRefs();
   const [options, setOptions] = useState([]);
 
   const handleSearch = (query) => {
-    setIsLoading(true);
-
-    fetch(`${SEARCH_URI}?q=${query}+in:login&page=1&per_page=50`)
-      .then((resp) => resp.json())
-      .then(({items}) => {
-        const options = items.map((i) => ({
-          avatar_url: i.avatar_url,
-          id: i.id,
-          login: i.login,
-        }));
-
-        setOptions(options);
-        setIsLoading(false);
-      });
+    setOptions(
+      Refs.filter(ref => ref.title.toLowerCase().includes(query.toLowerCase()))
+    )
   };
 
-  // Bypass client-side filtering by returning `true`. Results are already
-  // filtered by the search endpoint, so no need to do it again.
   const filterBy = () => true;
 
   return (
     <AsyncTypeahead
+      ref={searchInput}
       filterBy={filterBy}
       id="async-example"
-      isLoading={isLoading}
-      labelKey="login"
-      minLength={3}
+      isLoading={false}
+      labelKey="title"
+      minLength={2}
+      className={'w-100'}
       onSearch={handleSearch}
       options={options}
       placeholder="Поиск"
       renderMenuItemChildren={(option, props) => (
-        <Fragment>
-          <img
-            alt={option.login}
-            src={option.avatar_url}
-            style={{
-              height: '24px',
-              marginRight: '10px',
-              width: '24px',
-            }}
-          />
-          <span style={{wordWrap: 'break-word', whiteSpace: 'pre-line'}}>{option.login}</span>
-        </Fragment>
+        <Link to={option.ref} onClick={() => setRoute(option.ref)}>{option.title}</Link>
       )}
     />
   );
 };
+
+
+export default connect(null,
+  {
+    setRoute
+  },
+)(Search);

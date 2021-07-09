@@ -6,12 +6,14 @@ import {LastUpdated} from "../components/blocks/LastUpdated";
 
 export const Work = () =>
   <div className={'container container-fluid mb-5'}>
-    <h3>Опыт работы</h3>
+    <h3 id={'work_experience'}>Опыт работы</h3>
     <p>2 года 6 месяцев</p>
     <hr/>
     <h5>Декабрь 2020 - настоящее время</h5>
     <hr/>
-    <p><a href={'https://alemira.com/'} target={'_blank'}>SIT Alemira</a>, Москва</p>
+    <p id={'alemira'}>
+      <a href={'https://alemira.com/'} target={'_blank'}>SIT Alemira</a>, Москва
+    </p>
     <p>Senior QA Automation Engineer</p>
     <p>Проект: Образовательный комплекс для создания виртуальных лабораторных работ.
       Образовательная платформа для курсов.</p>
@@ -38,7 +40,9 @@ export const Work = () =>
 
     <h5 className={'mt-5'}>Сентябрь 2020 — Декабрь 2020</h5>
     <hr/>
-    <p><a href={'https://wakeapp.ru/'} target={'_blank'}>WakeApp</a>, Москва</p>
+    <p id={'wakeapp'}>
+      <a href={'https://wakeapp.ru/'} target={'_blank'}>WakeApp</a>, Москва
+    </p>
     <p>Middle QA Automation Engineer</p>
     <p>Проект: Маркетинговая CRM система для обработки KPI, кликов, конверсий, продаж.</p>
     <p>В обязанности входило:
@@ -64,7 +68,9 @@ export const Work = () =>
 
     <h5 className={'mt-5'}>Январь 2020 — Август 2020</h5>
     <hr/>
-    <p><a href={'https://infotecs.ru/'} target={'_blank'}>Infotecs</a>, Москва</p>
+    <p id={'infotecs'}>
+      <a href={'https://infotecs.ru/'} target={'_blank'}>Infotecs</a>, Москва
+    </p>
     <p>Middle QA Automation Engineer</p>
     <p>Проект: Автоматизированный комплекс для поисковой, журналистской, расследовательской деятельности.</p>
     <p>В обязанности входило:
@@ -89,7 +95,9 @@ export const Work = () =>
 
     <h5 className={'mt-5'}>Сентябрь 2019 — Декабрь 2019</h5>
     <hr/>
-    <p><a href={'https://www.omnicomm.ru/'} target={'_blank'}>Omnicomm</a>, Москва</p>
+    <p id={'omnicomm'}>
+      <a href={'https://www.omnicomm.ru/'} target={'_blank'}>Omnicomm</a>, Москва
+    </p>
     <p>Middle QA Automation Engineer</p>
     <p>Проект: Образовательная платформа для создания лабораторных работ, тестовых заданий</p>
     <p>В обязанности входило:

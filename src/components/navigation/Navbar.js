@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {connect} from "react-redux";
 import {setRoute} from "../../redux/reducer/meActions";
 import {useTranslation} from 'react-i18next';
-import {Search} from "../blocks/Search";
+import Search from "../blocks/Search";
 
 const NavigationNavbar = ({route, setRoute}) => {
   const {i18n} = useTranslation();
