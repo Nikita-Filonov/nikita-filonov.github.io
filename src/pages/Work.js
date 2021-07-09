@@ -2,6 +2,7 @@ import React from "react";
 import {Button} from "react-bootstrap";
 import {HashLink as Link} from "react-router-hash-link";
 import {ArrowLeft, ArrowRight} from "react-bootstrap-icons";
+import {LastUpdated} from "../components/blocks/LastUpdated";
 
 export const Work = () =>
   <div className={'container container-fluid mb-5'}>
@@ -121,6 +122,7 @@ export const Work = () =>
       в последующем был перевед на другой проект для развития автоматизации.
     </p>
 
+    <LastUpdated when={'Обновлено 08.07.2021'}/>
     <hr/>
     <div>
       <Button as={Link} to={'/education'} variant="light">

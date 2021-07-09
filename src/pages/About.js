@@ -2,6 +2,7 @@ import React from "react";
 import {Button} from "react-bootstrap";
 import {HashLink as Link} from 'react-router-hash-link';
 import {ArrowLeft, ArrowRight, Github, Mailbox, Telegram} from "react-bootstrap-icons";
+import {LastUpdated} from "../components/blocks/LastUpdated";
 
 export const About = () =>
   <div className={'container container-fluid mb-5'}>
@@ -142,6 +143,8 @@ export const About = () =>
       <Github className={'mb-1'}/>{' '}
       GitHub — <a href={'https://github.com/Nikita-Filonov'} target={'_blank'}>Nikita-Filonov</a>
     </p>
+
+    <LastUpdated when={'Обновлено 08.07.2021'}/>
     <hr/>
     <div>
       <Button as={Link} to={'/'} variant="light">

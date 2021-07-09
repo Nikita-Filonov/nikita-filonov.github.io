@@ -2,6 +2,7 @@ import React from "react";
 import {Button} from "react-bootstrap";
 import {HashLink as Link} from "react-router-hash-link";
 import {ArrowLeft, ArrowRight} from "react-bootstrap-icons";
+import {LastUpdated} from "../components/blocks/LastUpdated";
 
 export const Education = () =>
   <div className={'container container-fluid mb-5'}>
@@ -17,6 +18,8 @@ export const Education = () =>
       переподготовку по направлению <strong>"Управление персоналом"</strong>. Совмещал работу QA Automation
       Engineer с учебой, но на 3-м курсе я бросил обучение.
     </p>
+
+    <LastUpdated when={'Обновлено 08.07.2021'}/>
     <hr/>
     <div>
       <Button as={Link} to={'/about'} variant="light">
