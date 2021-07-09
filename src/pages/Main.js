@@ -12,8 +12,8 @@ const Main = ({setRoute}) => {
 
   return (
     <div className={'container mt-5'}>
-      <h4 className={'text-center'}>Добро пожаловать! Вы находитесь на личном сайте Никиты Филонова.</h4>
-      <h4 className={'text-center text-secondary'}>Я увлекаюсь веб и мобильной разработкой</h4>
+      <h4 className={'text-center'}>{t('Welcome')}</h4>
+      <h4 className={'text-center text-secondary'}>{t('WelcomeSubtitle')}</h4>
       <div className={'text-center'}>
         <Button
           variant="outline-secondary"
@@ -29,31 +29,16 @@ const Main = ({setRoute}) => {
       <Row style={{marginTop: '10%'}}>
         <hr style={{width: '100%'}}/>
         <Col>
-          <h5>Высокая продуктивность</h5>
-          <p className={'text-secondary mt-3'}>
-            Я всегда нацелен на результат. Если проект мне
-            интересен, то я способен сделать проект за неделю,
-            в то время, когда другим разработчикам требуются месяцы
-            на реализацию.
-          </p>
+          <h5>{t('HighProductivity')}</h5>
+          <p className={'text-secondary mt-3'}>{t('HighProductivityDescription')}</p>
         </Col>
         <Col>
-          <h5>Современный стэк</h5>
-          <p className={'text-secondary mt-3'}>
-            Я использую только современные технологии, которые
-            обеспечивают высокую продизводительность. А также
-            позволяют легко маштабировать проект.
-          </p>
+          <h5>{t('ModernStack')}</h5>
+          <p className={'text-secondary mt-3'}>{t('ModernStackDescription')}</p>
         </Col>
         <Col>
-          <h5>Разносторонний опыт</h5>
-          <p className={'text-secondary mt-3'}>
-            В моей практике был опыт, как бэкенд разработки, так и
-            фронтенд (веб/мобилка). Есть огромный опыт написания
-            автотестов, поэтому мой код всегда покрывается
-            API и Unit тестами. Для меня не проблема настроить
-            инфраструктуру проекта в CI/CD.
-          </p>
+          <h5>{t('VersatileExperience')}</h5>
+          <p className={'text-secondary mt-3'}>{t('VersatileExperienceDescription')}</p>
         </Col>
       </Row>
     </div>

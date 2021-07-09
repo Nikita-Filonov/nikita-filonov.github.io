@@ -7,7 +7,7 @@ import {useTranslation} from 'react-i18next';
 import Search from "../blocks/Search";
 
 const NavigationNavbar = ({route, setRoute}) => {
-  const {i18n} = useTranslation();
+  const {t, i18n} = useTranslation();
   const [lang, setLang] = useState(localStorage.getItem('lang') || 'ru')
 
   const onLanguage = async (lang) => {
@@ -18,7 +18,7 @@ const NavigationNavbar = ({route, setRoute}) => {
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className={'fixed-top'}>
-      <Navbar.Brand as={Link} to={'/'}>Никита Филонов</Navbar.Brand>
+      <Navbar.Brand as={Link} to={'/'}>{t('NikitaFilonov')}</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto"/>
@@ -33,7 +33,7 @@ const NavigationNavbar = ({route, setRoute}) => {
             as={Link}
             onSelect={() => setRoute('/')}
           >
-            Главная
+            {t('Home')}
           </Nav.Link>
           <Nav.Link
             eventKey={'/about'}
@@ -42,7 +42,7 @@ const NavigationNavbar = ({route, setRoute}) => {
             active={route === '/about'}
             onSelect={() => setRoute('/about')}
           >
-            Обзор
+            {t('Overview')}
           </Nav.Link>
           <Nav.Link
             eventKey={'/education'}
@@ -51,7 +51,7 @@ const NavigationNavbar = ({route, setRoute}) => {
             active={route === '/education'}
             onSelect={() => setRoute('/education')}
           >
-            Образование
+            {t('Education')}
           </Nav.Link>
           <Nav.Link
             eventKey={'/work'}
@@ -60,7 +60,7 @@ const NavigationNavbar = ({route, setRoute}) => {
             active={route === '/work'}
             onSelect={() => setRoute('/work')}
           >
-            Опыт работы
+            {t('Experience')}
           </Nav.Link>
           <Nav.Link
             eventKey={'/projects'}
@@ -69,9 +69,9 @@ const NavigationNavbar = ({route, setRoute}) => {
             active={route === '/projects'}
             onSelect={() => setRoute('/projects')}
           >
-            Проекты
+            {t('Projects')}
           </Nav.Link>
-          <NavDropdown title="Язык" id="collasible-nav-dropdown">
+          <NavDropdown title={t('Languages')} id="collasible-nav-dropdown">
             <NavDropdown.Item
               onClick={() => onLanguage('ru')}
               active={lang === 'ru'}

@@ -8,9 +8,11 @@ import {setRoute} from "../../redux/reducer/meActions";
 import {Education} from "../../pages/Education";
 import {Work} from "../../pages/Work";
 import {Projects} from "../../pages/Projects";
+import {useTranslation} from "react-i18next";
 
 const Sidebar = ({route, setRoute}) => {
-  const history = useHistory()
+  const {t} = useTranslation();
+  const history = useHistory();
 
   useEffect(() => {
     setRoute(history.location.pathname)
@@ -40,27 +42,27 @@ const Sidebar = ({route, setRoute}) => {
           >
             <Nav.Item className={'w-100'}>
               <Nav.Link as={Link} to={'/'} eventKey={'/'}>
-                Главная
+                {t('Home')}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to={'/about'} eventKey={'/about'}>
-                Обзор
+                {t('Overview')}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to={'/education'} eventKey={'/education'}>
-                Образование
+                {t('Education')}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to={'/work'} eventKey={'/work'}>
-                Опыт работы
+                {t('Experience')}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to={'/projects'} eventKey={'/projects'}>
-                Проекты
+                {t('Projects')}
               </Nav.Link>
             </Nav.Item>
           </Nav>

@@ -95,7 +95,7 @@ export const About = () =>
       </p>
     </li>
     <li>Инструменты:{' '}
-      <p className={'text-secondary mt-3'}>
+      <p className={'mt-3'}>
         Docker, Docker-Compose, PyCharm, Visual Studio, Atom, GitHub, GitLab, Jira, YouTrack,
         TestRail
       </p>
