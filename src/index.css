@@ -1,9 +1,12 @@
 html {
     overflow-y: overlay;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
     padding-top: 60px;
+    min-height: 100%;
 }
 
 *::-webkit-scrollbar {

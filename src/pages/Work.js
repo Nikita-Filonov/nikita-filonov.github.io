@@ -6,7 +6,8 @@ import {LastUpdated} from "../components/blocks/LastUpdated";
 
 export const Work = () =>
   <div className={'container container-fluid mb-5'}>
-    <h3>Опыт работ</h3>
+    <h3>Опыт работы</h3>
+    <p>2 года 6 месяцев</p>
     <hr/>
     <h5>Декабрь 2020 - настоящее время</h5>
     <hr/>

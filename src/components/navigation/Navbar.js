@@ -1,9 +1,10 @@
 import React, {useState} from "react";
-import {Form, FormControl, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Form, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {connect} from "react-redux";
 import {setRoute} from "../../redux/reducer/meActions";
 import {useTranslation} from 'react-i18next';
+import {Search} from "../blocks/Search";
 
 const NavigationNavbar = ({route, setRoute}) => {
   const {i18n} = useTranslation();
@@ -23,7 +24,7 @@ const NavigationNavbar = ({route, setRoute}) => {
         <Nav className="mr-auto"/>
         <Nav>
           <Form inline>
-            <FormControl type="text" placeholder="Поиск" className="mr-sm-2"/>
+            <Search/>
           </Form>
           <Nav.Link
             active={route === '/'}

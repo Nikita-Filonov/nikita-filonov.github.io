@@ -11,6 +11,7 @@ import NavigationNavbar from "./components/navigation/Navbar";
 import Sidebar from "./components/navigation/Sidebar";
 import meReducer from "./redux/reducer/meReducer";
 import Main from "./pages/Main";
+import Footer from "./components/blocks/Footer";
 
 const store = createStore(meReducer);
 
@@ -32,6 +33,7 @@ const CustomRoute = () => {
       <div className={'container-fluid'}>
         {route !== '/' ? <Sidebar/> : <Main/>}
       </div>
+      <Footer/>
     </Router>
   )
 }

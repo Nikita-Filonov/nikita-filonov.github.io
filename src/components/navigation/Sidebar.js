@@ -31,7 +31,7 @@ const Sidebar = ({route, setRoute}) => {
       activeKey={route}
       onSelect={(path) => setRoute(path)}
     >
-      <Row className={'mt-5 ml-2 mr-2'}>
+      <Row className={'mt-5 ml-2 mr-2 mb-5'}>
         <Col sm={3}>
           <Nav variant="pills"
                style={{width: '18%'}}
