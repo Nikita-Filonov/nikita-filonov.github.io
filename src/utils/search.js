@@ -15,11 +15,11 @@ export const SearchRefs = () => {
     {title: 'Shipshape', ref: '/projects#shipshape'},
     {title: 'Daily Food', ref: '/projects#daily_food'},
     {title: 'To Do', ref: '/projects#todo'},
-    {title: 'Опыт работы', ref: '/work#work_experience'},
-    {title: 'SIT Alemira, Москва', ref: '/work#alemira'},
-    {title: 'WakeApp, Москва', ref: '/work#wakeapp'},
-    {title: 'Infotecs, Москва', ref: '/work#infotecs'},
-    {title: 'Omnicomm, Москва', ref: '/work#omnicomm'}
+    {title: t('Опыт работы'), ref: '/work#work_experience'},
+    {title: `SIT Alemira, ${t('Moscow')}`, ref: '/work#alemira'},
+    {title: `WakeApp, ${t('Moscow')}`, ref: '/work#wakeapp'},
+    {title: `Infotecs, ${t('Moscow')}`, ref: '/work#infotecs'},
+    {title: `Omnicomm, ${t('Moscow')}`, ref: '/work#omnicomm'}
   ]
 
   return {Refs}

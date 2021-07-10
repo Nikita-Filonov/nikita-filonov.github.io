@@ -1,7 +1,21 @@
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
-import {AboutEnLocales, EducationEnLocales, enLocales, MainEnLocales, WorkEnLocales} from "./locales/en";
-import {AboutRuLocales, EducationRuLocales, MainRuLocales, ruLocales, WorkRuLocales} from "./locales/ru";
+import {
+  AboutEnLocales,
+  EducationEnLocales,
+  enLocales,
+  MainEnLocales,
+  ProjectsEnLocales,
+  WorkEnLocales
+} from "./locales/en";
+import {
+  AboutRuLocales,
+  EducationRuLocales,
+  MainRuLocales,
+  ProjectsRuLocales,
+  ruLocales,
+  WorkRuLocales
+} from "./locales/ru";
 
 
 const resources = {
@@ -11,7 +25,8 @@ const resources = {
       ...MainEnLocales,
       ...AboutEnLocales,
       ...EducationEnLocales,
-      ...WorkEnLocales
+      ...WorkEnLocales,
+      ...ProjectsEnLocales
     }
   },
   ru: {
@@ -20,7 +35,8 @@ const resources = {
       ...MainRuLocales,
       ...AboutRuLocales,
       ...EducationRuLocales,
-      ...WorkRuLocales
+      ...WorkRuLocales,
+      ...ProjectsRuLocales
     }
   }
 };

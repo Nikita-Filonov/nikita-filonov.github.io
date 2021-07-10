@@ -130,3 +130,96 @@ export const WorkEnLocales = {
   "OmnicommAchievements2": "Achievements: The first from the team proposed the introduction of automated testing,\n" +
     "later it was transferred to another project for the development of automation."
 }
+
+
+export const ProjectsEnLocales = {
+  "Links": "Links",
+  "Description": "Description",
+  "Functional": "Functional",
+  "RQTimerBlock1": "The project is designed to monitor bosses / elite monsters in real\n" +
+    "time, the application itself was written for the MMORPG game Royal Quest. But\n" +
+    "in fact, it can be used for any multiplayer game.\n" +
+    "This is one of the most ambitious projects I have ever implemented.\n" +
+    "and support. At the moment, the application is used by almost 500 users.\n" +
+    "About 100 users visit the service every day.",
+  "RQTimerBlock2": "The server and web parts were written in one week. Then a mobile application came out,\n" +
+    "after the Desktop application came out. So far, 7 releases have been released.",
+  "RQTimerBlock3": "Desktop application has overlay for games, system notifications.",
+  "RQTimerFunc1": "Create/delete/update personal and group timers",
+  "RQTimerFunc2": "Users can create groups for collective use",
+  "RQTimerFunc3": "Groups have a system of access rights",
+  "RQTimerFunc4": "Changes history is saved in groups for timers",
+  "RQTimerFunc5": "It is possible to restore from history",
+  "RQTimerFunc6": "Telegram notifications",
+  "RQTimerFunc7": "Vkontakte notifications",
+  "RQTimerFunc8": "Discord notifications",
+  "RQTimerFunc9": "Mobile app notifications",
+  "RQTimerFunc10": "Timer sound notifications",
+  "RQTimerFunc11": "System notifications in the Desktop client",
+  "RQTimerFunc12": "Settings for notifications, comments, sound",
+  "RQTimerFunc13": "Google Login",
+  "RQTimerFunc14": "Inviting participants via mail",
+  "TaskManagerBlock1": "This is my first project and my first mobile application. The app is for taking notes / tasks.\n" +
+    "The application has the ability to share tasks between users. Currently using it\n" +
+    "almost 200 people.",
+  "TaskManagerFunc1": "Create/delete/update tasks",
+  "TaskManagerFunc2": "Telegram notifications",
+  "TaskManagerFunc3": "Notifications in the mobile application",
+  "TaskManagerFunc4": "Web version notifications",
+  "TaskManagerFunc5": "Email notifications",
+  "TaskManagerFunc6": "Sharing tasks between users",
+  "TaskManagerFunc7": "Comments on shared problems",
+  "TaskManagerFunc8": "Lots of settings, including custom labels for tasks",
+  "ShipshapeBlock1": "Social network for sharing personal care tips. The app has\n" +
+    "quite extensive functionality and built-in database with articles on care.\n" +
+    "There is a division of articles into categories: \"Face\", \"Hair\", \"Body\", \"Health\".\n" +
+    "Also, the application individually selects tips for the selected hair type,\n" +
+    "skin, age. Users can post and chat,\n" +
+    "subscribe to other users.",
+  "ShipshapeFunc1": "Post creation",
+  "ShipshapeFunc2": "View and filter inline articles",
+  "ShipshapeFunc3": "Chatting inside the app",
+  "ShipshapeFunc4": "Subscriptions, subscribers",
+  "ShipshapeFunc5": "User profile",
+  "ShipshapeFunc6": "Push notifications for new articles, subscriptions, chat messages",
+  "ShipshapeFunc7": "Notification settings",
+  "ShipshapeFunc8": "Deep linking - the ability to share a profile, article, post",
+  "ShipshapeFunc9": "Likes, comments on posts",
+  "ShipshapeFunc10": "Individual adjustment of physiological data on the basis of which articles are selected.",
+  "ShipshapeFunc11": "Individual user profile with setting up personal data and profile photo",
+  "ShipshapeFunc12": "View notifications",
+  "ShipshapeFunc13": "View Liked Articles",
+  "ShipshapeFunc14": "System of tickets and requests to technical support",
+  "DailyFoodBlock1": "App for shopping list and recipes. In the application, you can create recipes for\n" +
+    "based on them to collect a shopping cart. Daily Food is the new version\n" +
+    "annexes",
+  "DailyFoodBlock2": "In the new version, the design and functionality have been completely redesigned, the number of\n" +
+    "products from 300 to 3000. A lot of work has been done on the performance of the application. Added\n" +
+    "animation.",
+  "DailyFoodFunc1": "Create/delete/change/copy lists with products",
+  "DailyFoodFunc2": "Adding your products",
+  "DailyFoodFunc3": "Adding your own product categories, with photos",
+  "DailyFoodFunc4": "Add photos to products",
+  "DailyFoodFunc5": "Stories in the application",
+  "DailyFoodFunc6": "Bulk selection for all lists",
+  "DailyFoodFunc7": "Liked products/recipes/lists",
+  "DailyFoodFunc8": "Animation for sorting and all lists",
+  "DailyFoodFunc9": "It is possible to share the list with another user",
+  "DailyFoodFunc10": "Creation of recipes with photos, descriptions, cooking times",
+  "DailyFoodFunc11": "Achievements system to motivate users to visit the application",
+  "TodoBlock1": "Apps for reminders and notes. Has a very user-friendly interface,\n" +
+    "to create annotations. Has a system for reminders with repetitions in the form\n" +
+    "Push notifications. It differs from Task Manager in that completely\n" +
+    "uses a local database. The app also has a scheduler\n" +
+    "day.",
+  "TodoFunc1": "Create/delete/modify notes",
+  "TodoFunc2": "Create/delete/modify lists in notes",
+  "TodoFunc3": "Change the background of a list",
+  "TodoFunc4": "Day planner",
+  "TodoFunc5": "Global search across all notes",
+  "TodoFunc6": "Individual settings of sections with tasks",
+  "TodoFunc7": "Adding under steps for notes",
+  "TodoFunc8": "For each note, it is possible to set the reminder time and repetition rate",
+  "TodoFunc9": "It is possible to customize the execution time",
+  "TodoFunc10": "The application has a very convenient and compact interface"
+}
