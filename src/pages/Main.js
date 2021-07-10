@@ -8,7 +8,7 @@ import {ArrowRight} from "react-bootstrap-icons";
 
 const Main = ({setRoute}) => {
   const history = useHistory();
-  const {t} = useTranslation()
+  const {t} = useTranslation();
 
   return (
     <div className={'container mt-5'}>

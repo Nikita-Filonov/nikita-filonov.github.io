@@ -94,4 +94,39 @@ export const EducationEnLocales = {
 }
 
 
-export const WorkEnLocales = {}
+export const WorkEnLocales = {
+  "WorkExperience": "2 years 6 months",
+  "AlemiraTitle": "December 2020 — present",
+  "Moscow": "Moscow",
+  "AlemiraProject": "Project: Educational complex for creating virtual laboratory works.\n" +
+    "Educational platform for courses.",
+  "AlemiraAchievements": "Achievements: I raised testing from scratch on two projects. Made a lot\n" +
+    "integrations for autotests. Fully automated everything from scratch in two months\n" +
+    "regression testing. Built infrastructure in GitLab CI using\n" +
+    "Docker Registry.",
+  "WakeAppTitle": "September 2020 — December 2020",
+  "WakeAppProject": "Project: Marketing CRM system for processing KPIs, clicks, conversions, sales.",
+  "WakeAppAchievements": "\n" +
+    "Achievements: I wrote autotests for API from scratch. Raised the infrastructure of autotests\n" +
+    "in Jenkins + integrated Jenkins with Slack. Made an integration with MySQL that\n" +
+    "allowed tests to work in any environment - tests were created for themselves\n" +
+    "required data. It is a great achievement that the autotests I wrote\n" +
+    "are still (07/08/2021) working in Jenkins CI and successfully functioning, while\n" +
+    "no edits were made to autotests and the framework itself was not made.",
+  "InfotecsTitle": "January 2020 — August 2020",
+  "InfotecsProject": "Project: Automated complex for search, journalistic, investigative activities.",
+  "InfotecsAchievements": "Achievements: I raised API / UI testing from scratch. Made significant\n" +
+    "changes in the flow of team work: description of tasks, compilation of a bug\n" +
+    "reports, testing of fixed bugs. When I came to\n" +
+    "the company, the product was under development and was not even\n" +
+    "version released. By the time the first version was released, the product was completely\n" +
+    "covered with autotests, many bugs were found and monitored.",
+  "OmnicommTitle1": "September 2019 — December 2019",
+  "OmnicommProject1": "Project: Educational platform for creating laboratory work, test tasks",
+  "OmnicommAchievements1": "Achievements: By his own will, he started automation on the project.\n" +
+    "All regression tests were automated from scratch.",
+  "OmnicommTitle2": "February 2019 — August 2019",
+  "OmnicommProject2": "Project: Complex for fuel control in freight transport",
+  "OmnicommAchievements2": "Achievements: The first from the team proposed the introduction of automated testing,\n" +
+    "later it was transferred to another project for the development of automation."
+}
