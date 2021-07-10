@@ -1,16 +1,15 @@
-import React from "react";
 import {useTranslation} from "react-i18next";
 
 export const SearchRefs = () => {
   const {t} = useTranslation();
 
   const Refs = [
-    {title: 'Общая информация', ref: '/about#main_info'},
-    {title: 'Стэк технологий', ref: '/about#technology_stack'},
-    {title: 'Проекты', ref: '/about#projects'},
-    {title: 'Языки', ref: '/about#languages'},
-    {title: 'Контакты', ref: '/about#contacts'},
-    {title: 'Образование', ref: '/education#education'},
+    {title: t('MainInfo'), ref: '/about#main_info'},
+    {title: t('TechnologyStack'), ref: '/about#technology_stack'},
+    {title: t('Projects'), ref: '/about#projects'},
+    {title: t('MainLanguages'), ref: '/about#languages'},
+    {title: t('Contacts'), ref: '/about#contacts'},
+    {title: t('Education'), ref: '/education#education'},
     {title: 'RQ Timer', ref: '/projects#rq_timer'},
     {title: 'Task Manager', ref: '/projects#task_manager'},
     {title: 'Shipshape', ref: '/projects#shipshape'},

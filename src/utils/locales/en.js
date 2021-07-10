@@ -82,3 +82,16 @@ export const AboutEnLocales = {
   "English - speak and understand fluently": "English — speak and understand fluently",
   "Contacts": "Contacts"
 }
+
+
+export const EducationEnLocales = {
+  "EducationBlock1": "At the moment I have only secondary general education. But that doesn't stop me from living\n" +
+    "and develop :)",
+  "EducationBlock2": 'Have I tried to get higher/secondary special education? Yes. For some time\n' +
+    'studied at "Moscow Power Engineering Institute" and attended additional professional\n' +
+    'retraining in the direction of "Personnel management". Combined the work of QA Automation\n' +
+    'Engineer with studies, but in the 3rd year I dropped out.'
+}
+
+
+export const WorkEnLocales = {}

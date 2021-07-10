@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
-import {AboutEnLocales, enLocales, MainEnLocales} from "./locales/en";
-import {MainRuLocales, ruLocales, AboutRuLocales} from "./locales/ru";
+import {AboutEnLocales, EducationEnLocales, enLocales, MainEnLocales, WorkEnLocales} from "./locales/en";
+import {AboutRuLocales, EducationRuLocales, MainRuLocales, ruLocales, WorkRuLocales} from "./locales/ru";
 
 
 const resources = {
@@ -9,14 +9,18 @@ const resources = {
     translation: {
       ...enLocales,
       ...MainEnLocales,
-      ...AboutEnLocales
+      ...AboutEnLocales,
+      ...EducationEnLocales,
+      ...WorkEnLocales
     }
   },
   ru: {
     translation: {
       ...ruLocales,
       ...MainRuLocales,
-      ...AboutRuLocales
+      ...AboutRuLocales,
+      ...EducationRuLocales,
+      ...WorkRuLocales
     }
   }
 };
