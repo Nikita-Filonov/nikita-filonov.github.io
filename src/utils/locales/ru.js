@@ -96,6 +96,7 @@ export const EducationRuLocales = {
 
 export const WorkRuLocales = {
   "WorkExperience": "2 года 6 месяцев",
+  "Workplace responsibilities": "Обязанности на рабочем месте",
   "AlemiraTitle": "Декабрь 2020 - настоящее время",
   "Moscow": "Москва",
   "AlemiraProject": "Проект: Образовательный комплекс для создания виртуальных лабораторных работ.\n" +
@@ -104,6 +105,18 @@ export const WorkRuLocales = {
     "интеграций для автотестов. С нуля за два месяца полностью автоматизировал все\n" +
     "регрессионной тестирование. Выстроил инфраструктуру в GitLab CI с использованием\n" +
     "Docker Registry.",
+  "AlemiraResp1": "Покрытие автотестами нескольких проектов компании",
+  "AlemiraResp2": "Разработка и развитие тестового фрэймворка",
+  "AlemiraResp3": "Написание API/UI e2e, интеграционных тестов",
+  "AlemiraResp4": "Настрока GitLab CI для автотестов",
+  "AlemiraResp5": "Написание Dockerfile-ов и запуск автотестов в Docker",
+  "AlemiraResp6": "Интеграция автотестов с проектом на .NET",
+  "AlemiraResp7": "Интеграция автотестов с MS SQL",
+  "AlemiraResp8": "Интеграция с Allure TestOps",
+  "AlemiraResp9": "Интеграция автотестов со Slack",
+  "AlemiraResp10": "Работа с Selenium, Pytest, Pytest-BDD, Python 3.8",
+  "AlemiraResp11": "Генерация видео и скриншотов для UI тестов, с последующим отображеним а Allure отчете",
+  "AlemiraResp12": "Работа с GitLab, YouTack, Miro, Figma, Slack",
   "WakeAppTitle": "Сентябрь 2020 — Декабрь 2020",
   "WakeAppProject": "Проект: Маркетинговая CRM система для обработки KPI, кликов, конверсий, продаж.",
   "WakeAppAchievements": "Достижения: С нуля написал автотесты для API. Поднял инфраструктуру автотестов\n" +
@@ -112,6 +125,16 @@ export const WorkRuLocales = {
     "необходимые данные. Большим достижением является то, что написанные мною автотесты\n" +
     "до сих пор (08.07.2021) работают в Jenkins CI и успешно функционаруют, при этом\n" +
     "никаких правок в автотесты и сам фрэймворк не вносилось.",
+  "WakeAppResp1": "Разработка тестового фрэймворка",
+  "WakeAppResp2": "Настройка CI в Jenkins",
+  "WakeAppResp3": "Написание API e2e тестов",
+  "WakeAppResp4": "Работа с Selenium, Pytest, Behave, Python 3.7",
+  "WakeAppResp5": "Использование Allure отчетов",
+  "WakeAppResp6": "Интеграция автотестов с MySQL",
+  "WakeAppResp7": "Интеграция автотестов с TestRail",
+  "WakeAppResp8": "Написание технической документации к автотестам",
+  "WakeAppResp9": "Генерация видео и скриншотов для UI тестов, с последующим отображеним а Allure отчете",
+  "WakeAppResp10": "Работа с GitHub, Jira, Confluence, Slack, TestRail",
   "InfotecsTitle": "Январь 2020 — Август 2020",
   "InfotecsProject": "Проект: Автоматизированный комплекс для поисковой, журналистской, расследовательской деятельности.",
   "InfotecsAchievements": "Достижения: С нуля поднял API/UI тестирование. Внес значительные\n" +
@@ -120,14 +143,35 @@ export const WorkRuLocales = {
     "компанию, продукт находился на стадии разработки и даже не была\n" +
     "выпущена версия. К выходу первой версии, продукт был полностью\n" +
     "покрыт автотестами, было найдено и проконтролированно множество багов.",
+  "InfotecsResp1": "Разработка тестового фрэймворка",
+  "InfotecsResp2": "Работа c Django/Django Rest Framework",
+  "InfotecsResp3": "Интеграция автотестов с Django",
+  "InfotecsResp4": "Интеграция автотестов с PostgreSQL",
+  "InfotecsResp5": "Написание документации к автотестам",
+  "InfotecsResp6": "Ручная проверка дефектов",
+  "InfotecsResp7": "Написание API/UI e2e тестов",
+  "InfotecsResp8": "Работа с Selenium, Pytest, Python 3.7",
+  "InfotecsResp9": "Работа с GitLab, YouTrack",
   "OmnicommTitle1": "Сентябрь 2019 — Декабрь 2019",
   "OmnicommProject1": "Проект: Образовательная платформа для создания лабораторных работ, тестовых заданий",
   "OmnicommAchievements1": "Достижения: По собсвенному желанию начал автоматизацию на проекте.\n" +
     "С нуля были автоматизированны все регрессионные тесты.",
+  "OmnicommResp1_1": "Написание API/UI e2e тестов",
+  "OmnicommResp1_2": "Работа с Selenium, Pytest, Python 3.7",
+  "OmnicommResp1_3": "Нагрузочное тестирование с помощью Locust",
+  "OmnicommResp1_4": "Написание документации к автотестам",
+  "OmnicommResp1_5": "Подготовка тестового окружения - TeamCity",
+  "OmnicommResp1_6": "Контроль за исправлением багов",
+  "OmnicommResp1_7": "Работа с GitHub, Jira, Confluence, TeamCity",
   "OmnicommTitle2": "Февраль 2019 — Август 2019",
   "OmnicommProject2": "Проект: Комплекс по контролю топлива в грузовом транспорте",
   "OmnicommAchievements2": "Достижения: Первый из команды предложил внедрение автоматизированного тестирования,\n" +
-    "в последующем был перевед на другой проект для развития автоматизации."
+    "в последующем был перевед на другой проект для развития автоматизации.",
+  "OmnicommResp2_1": "Тестирование API/UI",
+  "OmnicommResp2_2": "Регресс, смоук тестирование",
+  "OmnicommResp2_3": "Подготовка тестового окружения - TeamCity",
+  "OmnicommResp2_4": "Работа с Jira, Confluence, TeamCity, TestRail",
+  "OmnicommResp2_5": "Писал тест-кейсы, чек-листы, тест-планы + поддерживал все в актуальном состоянии",
 }
 
 

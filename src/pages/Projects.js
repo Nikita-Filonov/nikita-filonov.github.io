@@ -66,7 +66,7 @@ export const Projects = () => {
 
         <h6 className={'mt-4'}>{t('Functional')}</h6>
         {[...new Array(14).keys()].map((num) =>
-          <li>{t(`RQTimerFunc${num + 1}`)}</li>
+          <li key={num}>{t(`RQTimerFunc${num + 1}`)}</li>
         )}
       </div>
 
@@ -88,7 +88,7 @@ export const Projects = () => {
 
         <h6 className={'mt-4'}>{t('Functional')}</h6>
         {[...new Array(8).keys()].map((num) =>
-          <li>{t(`TaskManagerFunc${num + 1}`)}</li>
+          <li key={num}>{t(`TaskManagerFunc${num + 1}`)}</li>
         )}
       </div>
 
@@ -108,7 +108,7 @@ export const Projects = () => {
 
         <h6 className={'mt-4'}>{t('Functional')}</h6>
         {[...new Array(14).keys()].map((num) =>
-          <li>{t(`ShipshapeFunc${num + 1}`)}</li>
+          <li key={num}>{t(`ShipshapeFunc${num + 1}`)}</li>
         )}
       </div>
 
@@ -132,7 +132,7 @@ export const Projects = () => {
 
         <h6 className={'mt-4'}>{t('Functional')}</h6>
         {[...new Array(11).keys()].map((num) =>
-          <li>{t(`DailyFoodFunc${num + 1}`)}</li>
+          <li key={num}>{t(`DailyFoodFunc${num + 1}`)}</li>
         )}
       </div>
 
@@ -151,7 +151,7 @@ export const Projects = () => {
 
         <h6 className={'mt-4'}>{t('Functional')}</h6>
         {[...new Array(10).keys()].map((num) =>
-          <li>{t(`TodoFunc${num + 1}`)}</li>
+          <li key={num}>{t(`TodoFunc${num + 1}`)}</li>
         )}
       </div>
 

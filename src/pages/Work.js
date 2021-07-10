@@ -20,20 +20,11 @@ export const Work = () => {
       </p>
       <p>Senior QA Automation Engineer</p>
       <p>{t('AlemiraProject')}</p>
-      {/*<p>В обязанности входит:*/}
-      {/*  <li>Покрытие автотестами нескольких проектов компании</li>*/}
-      {/*  <li>Разработка и развитие тестового фрэймворка</li>*/}
-      {/*  <li>Написание API/UI e2e, интеграционных тестов</li>*/}
-      {/*  <li>Настрока GitLab CI для автотестов</li>*/}
-      {/*  <li>Написание Dockerfile-ов и запуск автотестов в Docker</li>*/}
-      {/*  <li>Интеграция автотестов с проектом на .NET</li>*/}
-      {/*  <li>Интеграция автотестов с MS SQL</li>*/}
-      {/*  <li>Интеграция с Allure TestOps</li>*/}
-      {/*  <li>Интеграция автотестов со Slack</li>*/}
-      {/*  <li>Работа с Selenium, Pytest, Pytest-BDD, Python 3.8</li>*/}
-      {/*  <li>Генерация видео и скриншотов для UI тестов, с последующим отображеним а Allure отчете</li>*/}
-      {/*  <li>Работа с GitLab, YouTack, Miro, Figma, Slack</li>*/}
-      {/*</p>*/}
+      <p>{t('Workplace responsibilities')}:
+        {[...new Array(12).keys()].map((num) =>
+          <li key={num}>{t(`AlemiraResp${num + 1}`)}</li>
+        )}
+      </p>
       <p>{t('AlemiraAchievements')}</p>
 
       <h5 className={'mt-5'}>{t('WakeAppTitle')}</h5>
@@ -43,18 +34,11 @@ export const Work = () => {
       </p>
       <p>Middle QA Automation Engineer</p>
       <p>{t('WakeAppProject')}</p>
-      {/*<p>В обязанности входило:*/}
-      {/*  <li>Разработка тестового фрэймворка</li>*/}
-      {/*  <li>Настройка CI в Jenkins</li>*/}
-      {/*  <li>Написание API e2e тестов</li>*/}
-      {/*  <li>Работа с Selenium, Pytest, Behave, Python 3.7</li>*/}
-      {/*  <li>Использование Allure отчетов</li>*/}
-      {/*  <li>Интеграция автотестов с MySQL</li>*/}
-      {/*  <li>Интеграция автотестов с TestRail</li>*/}
-      {/*  <li>Написание технической документации к автотестам</li>*/}
-      {/*  <li>Генерация видео и скриншотов для UI тестов, с последующим отображеним а Allure отчете</li>*/}
-      {/*  <li>Работа с GitHub, Jira, Confluence, Slack, TestRail</li>*/}
-      {/*</p>*/}
+      <p>{t('Workplace responsibilities')}:
+        {[...new Array(10).keys()].map((num) =>
+          <li key={num}>{t(`WakeAppResp${num + 1}`)}</li>
+        )}
+      </p>
       <p>{t('WakeAppAchievements')}</p>
 
       <h5 className={'mt-5'}>{t('InfotecsTitle')}</h5>
@@ -64,17 +48,11 @@ export const Work = () => {
       </p>
       <p>Middle QA Automation Engineer</p>
       <p>{t('InfotecsProject')}</p>
-      {/*<p>В обязанности входило:*/}
-      {/*  <li>Разработка тестового фрэймворка</li>*/}
-      {/*  <li>Работа c Django/Django Rest Framework</li>*/}
-      {/*  <li>Интеграция автотестов с Django</li>*/}
-      {/*  <li>Интеграция автотестов с PostgreSQL</li>*/}
-      {/*  <li>Написание документации к автотестам</li>*/}
-      {/*  <li>Ручная проверка дефектов</li>*/}
-      {/*  <li>Написание API/UI e2e тестов</li>*/}
-      {/*  <li>Работа с Selenium, Pytest, Python 3.7</li>*/}
-      {/*  <li>Работа с GitLab, YouTrack</li>*/}
-      {/*</p>*/}
+      <p>{t('Workplace responsibilities')}:
+        {[...new Array(9).keys()].map((num) =>
+          <li key={num}>{t(`InfotecsResp${num + 1}`)}</li>
+        )}
+      </p>
       <p>{t('InfotecsAchievements')}</p>
 
       <h5 className={'mt-5'}>{t("OmnicommTitle1")}</h5>
@@ -84,15 +62,11 @@ export const Work = () => {
       </p>
       <p>Middle QA Automation Engineer</p>
       <p>{t('OmnicommProject1')}</p>
-      {/*<p>В обязанности входило:*/}
-      {/*  <li>Написание API/UI e2e тестов</li>*/}
-      {/*  <li>Работа с Selenium, Pytest, Python 3.7</li>*/}
-      {/*  <li>Нагрузочное тестирование с помощью Locust</li>*/}
-      {/*  <li>Написание документации к автотестам</li>*/}
-      {/*  <li>Подготовка тестового окружения - TeamCity</li>*/}
-      {/*  <li>Контроль за исправлением багов</li>*/}
-      {/*  <li>Работа с GitHub, Jira, Confluence, TeamCity</li>*/}
-      {/*</p>*/}
+      <p>{t('Workplace responsibilities')}:
+        {[...new Array(7).keys()].map((num) =>
+          <li key={num}>{t(`OmnicommResp1_${num + 1}`)}</li>
+        )}
+      </p>
       <p>{t("OmnicommAchievements1")}</p>
 
       <h5 className={'mt-5'}>{t('OmnicommTitle2')}</h5>
@@ -100,13 +74,11 @@ export const Work = () => {
       <p><a href={'https://www.omnicomm.ru/'} target={'_blank'}>Omnicomm</a>, {t('Moscow')}</p>
       <p>QA Engineer</p>
       <p>{t('OmnicommProject2')}</p>
-      {/*<p>В обязанности входило:*/}
-      {/*  <li>Тестирование API/UI</li>*/}
-      {/*  <li>Регресс, смоук тестирование</li>*/}
-      {/*  <li>Подготовка тестового окружения - TeamCity</li>*/}
-      {/*  <li>Работа с Jira, Confluence, TeamCity, TestRail</li>*/}
-      {/*  <li>Писал тест-кейсы, чек-листы, тест-планы + поддерживал все в актуальном состоянии</li>*/}
-      {/*</p>*/}
+      <p>{t('Workplace responsibilities')}:
+        {[...new Array(5).keys()].map((num) =>
+          <li key={num}>{t(`OmnicommResp2_${num + 1}`)}</li>
+        )}
+      </p>
       <p>{t('OmnicommAchievements2')}</p>
 
       <LastUpdated when={'08.07.2021'}/>

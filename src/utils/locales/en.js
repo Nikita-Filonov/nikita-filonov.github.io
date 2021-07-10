@@ -96,6 +96,7 @@ export const EducationEnLocales = {
 
 export const WorkEnLocales = {
   "WorkExperience": "2 years 6 months",
+  "Workplace responsibilities": "Workplace responsibilities",
   "AlemiraTitle": "December 2020 — present",
   "Moscow": "Moscow",
   "AlemiraProject": "Project: Educational complex for creating virtual laboratory works.\n" +
@@ -104,6 +105,18 @@ export const WorkEnLocales = {
     "integrations for autotests. Fully automated everything from scratch in two months\n" +
     "regression testing. Built infrastructure in GitLab CI using\n" +
     "Docker Registry.",
+  "AlemiraResp1": "Autotest coverage of several company projects",
+  "AlemiraResp2": "Development and development of a test framework",
+  "AlemiraResp3": "Writing API/UI e2e, integration tests",
+  "AlemiraResp4": "GitLab CI configuration for autotests",
+  "AlemiraResp5": "Writing Dockerfiles and Running Autotests in Docker",
+  "AlemiraResp6": "Integration of autotests with a .NET project",
+  "AlemiraResp7": "Integration of autotests with MS SQL",
+  "AlemiraResp8": "Integration with Allure TestOps",
+  "AlemiraResp9": "Integration of autotests with Slack",
+  "AlemiraResp10": "Working with Selenium, Pytest, Pytest-BDD, Python 3.8",
+  "AlemiraResp11": "Generation of video and screenshots for UI tests, with subsequent display in the Allure report",
+  "AlemiraResp12": "Working with GitLab, YouTack, Miro, Figma, Slack",
   "WakeAppTitle": "September 2020 — December 2020",
   "WakeAppProject": "Project: Marketing CRM system for processing KPIs, clicks, conversions, sales.",
   "WakeAppAchievements": "\n" +
@@ -113,6 +126,16 @@ export const WorkEnLocales = {
     "required data. It is a great achievement that the autotests I wrote\n" +
     "are still (07/08/2021) working in Jenkins CI and successfully functioning, while\n" +
     "no edits were made to autotests and the framework itself was not made.",
+  "WakeAppResp1": "Test framework development",
+  "WakeAppResp2": "CI setup in Jenkins",
+  "WakeAppResp3": "Writing API e2e tests",
+  "WakeAppResp4": "Working with Selenium, Pytest, Behave, Python 3.7",
+  "WakeAppResp5": "Using Allure reports",
+  "WakeAppResp6": "Integration of autotests with MySQL",
+  "WakeAppResp7": "Integration of autotests with TestRail",
+  "WakeAppResp8": "Writing technical documentation for autotests",
+  "WakeAppResp9": "Generation of video and screenshots for UI tests, with subsequent display in the Allure report",
+  "WakeAppResp10": "Working with GitHub, Jira, Confluence, Slack, TestRail",
   "InfotecsTitle": "January 2020 — August 2020",
   "InfotecsProject": "Project: Automated complex for search, journalistic, investigative activities.",
   "InfotecsAchievements": "Achievements: I raised API / UI testing from scratch. Made significant\n" +
@@ -121,14 +144,35 @@ export const WorkEnLocales = {
     "the company, the product was under development and was not even\n" +
     "version released. By the time the first version was released, the product was completely\n" +
     "covered with autotests, many bugs were found and monitored.",
+  "InfotecsResp1": "Test framework development",
+  "InfotecsResp2": "Working with Django/Django Rest Framework",
+  "InfotecsResp3": "Integration of autotests with Django",
+  "InfotecsResp4": "Integration of autotests with PostgreSQL",
+  "InfotecsResp5": "Writing documentation for autotests",
+  "InfotecsResp6": "Manual defect check",
+  "InfotecsResp7": "Writing API / UI e2e tests",
+  "InfotecsResp8": "Working with Selenium, Pytest, Python 3.7",
+  "InfotecsResp9": "Working with GitLab, YouTrack",
   "OmnicommTitle1": "September 2019 — December 2019",
   "OmnicommProject1": "Project: Educational platform for creating laboratory work, test tasks",
   "OmnicommAchievements1": "Achievements: By his own will, he started automation on the project.\n" +
     "All regression tests were automated from scratch.",
+  "OmnicommResp1_1": "Writing API / UI e2e tests",
+  "OmnicommResp1_2": "Working with Selenium, Pytest, Python 3.7",
+  "OmnicommResp1_3": "Load testing with Locust",
+  "OmnicommResp1_4": "Writing documentation for autotests",
+  "OmnicommResp1_5": "Preparing a test environment - TeamCity",
+  "OmnicommResp1_6": "Bug fix control",
+  "OmnicommResp1_7": "Working with GitHub, Jira, Confluence, TeamCity",
   "OmnicommTitle2": "February 2019 — August 2019",
   "OmnicommProject2": "Project: Complex for fuel control in freight transport",
   "OmnicommAchievements2": "Achievements: The first from the team proposed the introduction of automated testing,\n" +
-    "later it was transferred to another project for the development of automation."
+    "later it was transferred to another project for the development of automation.",
+  "OmnicommResp2_1": "API/UI testing",
+  "OmnicommResp2_2": "Regression, smoke testing",
+  "OmnicommResp2_3": "Preparing a test environment - TeamCity",
+  "OmnicommResp2_4": "Working with Jira, Confluence, TeamCity, TestRail",
+  "OmnicommResp2_5": "He wrote test cases, checklists, test plans + kept everything up to date",
 }
 
 
