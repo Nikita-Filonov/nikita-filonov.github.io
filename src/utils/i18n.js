@@ -1,20 +1,22 @@
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
-import {enLocales, MainEnLocales} from "./locales/en";
-import {MainRuLocales, ruLocales} from "./locales/ru";
+import {AboutEnLocales, enLocales, MainEnLocales} from "./locales/en";
+import {MainRuLocales, ruLocales, AboutRuLocales} from "./locales/ru";
 
 
 const resources = {
   en: {
     translation: {
       ...enLocales,
-      ...MainEnLocales
+      ...MainEnLocales,
+      ...AboutEnLocales
     }
   },
   ru: {
     translation: {
       ...ruLocales,
-      ...MainRuLocales
+      ...MainRuLocales,
+      ...AboutRuLocales
     }
   }
 };
