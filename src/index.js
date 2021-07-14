@@ -12,6 +12,7 @@ import Sidebar from "./components/navigation/Sidebar";
 import meReducer from "./redux/reducer/meReducer";
 import Main from "./pages/Main";
 import Footer from "./components/blocks/Footer";
+import {parseHashUrl} from "./utils/utils";
 
 const store = createStore(meReducer);
 
@@ -19,7 +20,7 @@ const CustomRoute = () => {
   const [route, setRoute] = useState('/')
 
   useEffect(() => {
-    setRoute(window.location.pathname)
+    setRoute(parseHashUrl(window.location.pathname))
     const listener = store.subscribe(() => setRoute(store.getState().me.route))
 
     return () => {
