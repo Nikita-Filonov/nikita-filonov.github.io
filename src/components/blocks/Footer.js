@@ -22,7 +22,7 @@ function Footer({children}) {
 
       <div style={style}>
         {children}
-        <p>MIT Licensed | Copyright © {new Date().getFullYear()}</p>
+        <p>Apache License 2 | Copyright © {new Date().getFullYear()}</p>
       </div>
   )
 }
