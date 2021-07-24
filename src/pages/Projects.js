@@ -119,7 +119,7 @@ export const Projects = () => {
         <hr/>
         <h6 className={'mt-4'}>{t('Links')}</h6>
         <li>
-          <a href={'https://play.google.com/store/apps/details?id=com.basket_food_lama_time'}
+          <a href={'https://play.google.com/store/apps/details?id=com.daily_food_lama_time'}
              target={'_blank'}>Mobile</a>
         </li>
 

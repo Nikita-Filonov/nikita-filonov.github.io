@@ -10,20 +10,13 @@ var style = {
   width: "100%",
 }
 
-var phantom = {
-  display: 'block',
-  padding: '20px',
-  height: '60px',
-  width: '100%',
-}
 
 function Footer({children}) {
   return (
-
-      <div style={style}>
-        {children}
-        <p>Apache License 2 | Copyright © {new Date().getFullYear()}</p>
-      </div>
+    <div style={style}>
+      {children}
+      <p>Apache License 2 | Copyright © {new Date().getFullYear()}</p>
+    </div>
   )
 }
 
