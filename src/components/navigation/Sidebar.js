@@ -9,7 +9,6 @@ import {Education} from "../../pages/Education";
 import {Work} from "../../pages/Work";
 import {Projects} from "../../pages/Projects";
 import {useTranslation} from "react-i18next";
-import {Ulyana} from "../../pages/Ulyana";
 
 const Sidebar = ({route, setRoute}) => {
   const {t} = useTranslation();
@@ -84,9 +83,6 @@ const Sidebar = ({route, setRoute}) => {
             </Tab.Pane>
             <Tab.Pane eventKey={'/projects'}>
               <Projects/>
-            </Tab.Pane>
-            <Tab.Pane eventKey={'/ulyana'}>
-              <Ulyana/>
             </Tab.Pane>
           </Tab.Content>
         </Col>
